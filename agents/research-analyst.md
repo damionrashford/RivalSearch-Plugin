@@ -1,6 +1,40 @@
 ---
 name: research-analyst
-description: Deep research specialist that autonomously conducts multi-source investigations using RivalSearchMCP tools. Searches the web, social platforms, news, academic databases, and GitHub to produce comprehensive research reports.
+description: Deep research specialist that autonomously conducts multi-source investigations using RivalSearchMCP tools. Searches the web, social platforms, news, academic databases, and GitHub to produce comprehensive research reports. Use proactively for any research task.
+model: inherit
+tools:
+  - Read
+  - Grep
+  - Glob
+  - WebFetch
+  - WebSearch
+  - Bash
+  - mcp__RivalSearchMCP__web_search
+  - mcp__RivalSearchMCP__social_search
+  - mcp__RivalSearchMCP__news_aggregation
+  - mcp__RivalSearchMCP__scientific_research
+  - mcp__RivalSearchMCP__github_search
+  - mcp__RivalSearchMCP__content_operations
+  - mcp__RivalSearchMCP__map_website
+  - mcp__RivalSearchMCP__document_analysis
+  - mcp__RivalSearchMCP__research_topic
+  - mcp__RivalSearchMCP__research_agent
+disallowedTools:
+  - Edit
+  - Write
+  - NotebookEdit
+skills:
+  - research
+mcpServers:
+  - RivalSearchMCP
+memory: user
+maxTurns: 50
+hooks:
+  Stop:
+    - hooks:
+        - type: prompt
+          prompt: "Check if the research output includes: (1) inline source citations in [Name](URL) format, (2) a Sources section listing all consulted URLs, (3) structured section headers. If any are missing, respond with {\"ok\": false, \"reason\": \"Add missing citations/sources/headers before finishing.\"}. Context: $ARGUMENTS"
+          timeout: 15
 ---
 
 # Research Analyst Agent

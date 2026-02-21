@@ -1,6 +1,40 @@
 ---
 name: competitive-intel
-description: Competitive intelligence specialist that analyzes companies, products, and market positions using RivalSearchMCP tools. Produces structured SWOT analyses and competitive landscape reports.
+description: Competitive intelligence specialist that analyzes companies, products, and market positions using RivalSearchMCP tools. Produces structured SWOT analyses and competitive landscape reports. Use proactively for competitor analysis and market positioning tasks.
+model: inherit
+tools:
+  - Read
+  - Grep
+  - Glob
+  - WebFetch
+  - WebSearch
+  - Bash
+  - mcp__RivalSearchMCP__web_search
+  - mcp__RivalSearchMCP__social_search
+  - mcp__RivalSearchMCP__news_aggregation
+  - mcp__RivalSearchMCP__scientific_research
+  - mcp__RivalSearchMCP__github_search
+  - mcp__RivalSearchMCP__content_operations
+  - mcp__RivalSearchMCP__map_website
+  - mcp__RivalSearchMCP__document_analysis
+  - mcp__RivalSearchMCP__research_topic
+  - mcp__RivalSearchMCP__research_agent
+disallowedTools:
+  - Edit
+  - Write
+  - NotebookEdit
+skills:
+  - competitive-intel
+mcpServers:
+  - RivalSearchMCP
+memory: user
+maxTurns: 50
+hooks:
+  Stop:
+    - hooks:
+        - type: prompt
+          prompt: "Check if the competitive intelligence output includes: (1) a SWOT section (Strengths/Weaknesses/Opportunities/Threats), (2) inline source citations in [Name](URL) format, (3) a Sources section. If any are missing, respond with {\"ok\": false, \"reason\": \"Add missing SWOT/citations/sources before finishing.\"}. Context: $ARGUMENTS"
+          timeout: 15
 ---
 
 # Competitive Intelligence Agent

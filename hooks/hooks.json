@@ -1,0 +1,27 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "mcp__RivalSearchMCP__*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq -r '.tool_name // \"unknown\"' | xargs -I{} sh -c 'echo \"[$(date \"+%Y-%m-%d %H:%M:%S\")] {}\" >> /tmp/rival-search-audit.log'",
+            "timeout": 5
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "prompt",
+            "prompt": "Check if any RivalSearchMCP research tools were used in this conversation. If research was conducted, verify the output includes: (1) inline source citations in [Name](URL) format, (2) a Sources section listing all consulted URLs, (3) structured section headers. If any are missing, briefly remind to add them. If no research was conducted, respond with just 'No action needed.' Context: $ARGUMENTS",
+            "timeout": 15
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,7 +1,7 @@
 {
   "name": "rival-search",
-  "version": "1.0.0",
-  "description": "Research intelligence plugin powered by RivalSearchMCP. 10 research tools, 5 workflow skills, 2 specialized agents. Zero API keys required.",
+  "version": "2.0.0",
+  "description": "Elite research intelligence plugin powered by RivalSearchMCP. 10 research tools, 5 workflow skills, 6 specialist agents, portable hooks, zero API keys. Your AI research team.",
   "author": {
     "name": "Damion Rashford",
     "url": "https://github.com/damionrashford"
@@ -9,5 +9,25 @@
   "homepage": "https://rivalsearchmcp.com",
   "repository": "https://github.com/damionrashford/rival-search",
   "license": "MIT",
-  "keywords": ["research", "web-search", "competitor-analysis", "market-intelligence", "mcp"]
+  "keywords": [
+    "research",
+    "web-search",
+    "competitor-analysis",
+    "market-intelligence",
+    "mcp",
+    "fact-checking",
+    "trend-analysis",
+    "due-diligence",
+    "content-strategy",
+    "academic-research",
+    "news-aggregation",
+    "social-search",
+    "site-audit",
+    "competitive-intelligence",
+    "osint"
+  ],
+  "skills": "./skills/",
+  "agents": "./agents/",
+  "hooks": "./hooks/hooks.json",
+  "mcpServers": "./.mcp.json"
 }
