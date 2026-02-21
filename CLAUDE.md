@@ -1,12 +1,16 @@
-# Rival Search Plugin — Project Brain
+# Rival Search — Claude Code Plugin
 
 > This file is read by Claude when working in this project. It contains architecture, conventions, and tool references. For human-facing docs, see README.md.
 
-## What This Plugin Does
+## What This Claude Code Plugin Is
 
-This is a Claude Code plugin that gives Claude a full research team. It connects to [RivalSearchMCP](https://github.com/damionrashford/RivalSearchMCP) — a hosted MCP server with 10 free research tools, zero API keys.
+**Rival Search Plugin** is a **Claude Code Plugin** powered by the **[RivalSearchMCP](https://github.com/damionrashford/RivalSearchMCP)** MCP (Model Context Protocol) server. It turns Claude into a full AI research team — no API keys, no setup.
 
-The plugin provides: 5 workflow skills, 6 specialist agents, portable hooks, and the live MCP connection.
+This Claude Code plugin connects to RivalSearchMCP via MCP at `https://RivalSearchMCP.fastmcp.app/mcp` and provides:
+- **10 MCP tools** — web, social, news, GitHub, academic, document analysis, and more
+- **5 agent skills** — slash commands that run multi-step research workflows
+- **6 AI research agents** — specialist analysts Claude invokes automatically
+- **Portable hooks** — audit logging and quality gates
 
 ## Architecture
 

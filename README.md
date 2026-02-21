@@ -1,74 +1,59 @@
-# rival-search
+# Rival Search Plugin
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
-[![Claude Code Plugin](https://img.shields.io/badge/Claude_Code-Plugin-blueviolet?style=for-the-badge)](https://claude.ai/code)
-[![MCP Powered](https://img.shields.io/badge/MCP-Powered-blue?style=for-the-badge)](https://github.com/damionrashford/RivalSearchMCP)
-[![RivalSearchMCP](https://img.shields.io/badge/RivalSearchMCP-10_Tools-green?style=for-the-badge)](https://github.com/damionrashford/RivalSearchMCP)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin&style=for-the-badge)](https://www.linkedin.com/in/damion-rashford)
+**A Claude Code plugin with AI research agent skills powered by MCP.**
 
-[![GitHub Stars](https://img.shields.io/github/stars/damionrashford/rival-search?style=social)](https://github.com/damionrashford/rival-search)
-[![GitHub Forks](https://img.shields.io/github/forks/damionrashford/rival-search?style=social)](https://github.com/damionrashford/rival-search)
-[![GitHub Issues](https://img.shields.io/github/issues/damionrashford/rival-search?style=social)](https://github.com/damionrashford/rival-search/issues)
-[![Last Commit](https://img.shields.io/github/last-commit/damionrashford/rival-search?style=social)](https://github.com/damionrashford/rival-search)
+> No API keys, no subscriptions, no configuration. Install and start researching.
 
-**A Claude Code plugin that turns Claude into a full AI research team.**
-
-> 🆓 **100% Free & Open Source** — No API keys, no subscriptions, no configuration. Install the plugin and start researching.
-
-Powered by **[RivalSearchMCP](https://github.com/damionrashford/RivalSearchMCP)** — 10 free research tools across web, social, news, GitHub, academic, and document sources.
+Powered by **[RivalSearchMCP](https://github.com/damionrashford/RivalSearchMCP)** — 10 MCP research tools across web, social, news, GitHub, academic, and document sources.
 
 ---
 
-## ✅ What It Does
+## What This Claude Code Plugin Does
 
-rival-search gives Claude Code a complete research intelligence platform:
+This Claude Code plugin gives Claude a complete AI research platform — 10 MCP tools, 5 agent skills, and 6 specialist agents that work together to handle any research task.
 
-- **10 research tools** via [RivalSearchMCP](https://github.com/damionrashford/RivalSearchMCP) — web search, social media, news, GitHub, academic papers, document analysis, and more
-- **5 workflow skills** — slash commands that run multi-step research and produce structured reports
-- **6 specialist agents** — AI research analysts that Claude invokes automatically based on your task
+- **10 MCP tools** via [RivalSearchMCP](https://github.com/damionrashford/RivalSearchMCP) — web search, social media, news, GitHub, academic papers, document analysis, and more
+- **5 agent skills** — slash commands that run multi-step research workflows and produce structured reports
+- **6 AI research agents** — specialist analysts that Claude invokes automatically based on your task
 - **Portable hooks** — audit logging and quality gates that travel with the plugin
 
-## 💡 Example Queries
+## Example Queries
 
-Once installed, try these in Claude Code:
+Once this Claude Code plugin is installed, try these agent skills:
 
-> "Research the current state of AI code generation tools"
-
-> "/rival-search:competitive-intel Cursor"
-
-> "/rival-search:fact-check 'OpenAI revenue exceeded $2 billion in 2024'"
-
-> "/rival-search:due-diligence Anthropic"
-
-> "/rival-search:trend-intel AI agents for software development"
+```
+"Research the current state of AI code generation tools"
+/rival-search:competitive-intel Cursor
+/rival-search:fact-check "OpenAI revenue exceeded $2 billion in 2024"
+/rival-search:due-diligence Anthropic
+/rival-search:trend-intel AI agents for software development
+```
 
 ---
 
-## 📦 How to Get Started
+## Getting Started
 
-### From Claude Code Marketplace (Recommended)
+### Claude Code Marketplace (Recommended)
 
 ```bash
 /plugin marketplace add damionrashford/rival-search
 /plugin install rival-search@damionrashford-rival-search
 ```
 
-### From Local Directory
+### Local Directory
 
 ```bash
 git clone https://github.com/damionrashford/rival-search.git
 claude --plugin-dir ./rival-search
 ```
 
-That's it. The plugin auto-connects to the hosted [RivalSearchMCP](https://github.com/damionrashford/RivalSearchMCP) server. All 10 tools are available immediately — no setup, no API keys.
+This Claude Code plugin auto-connects to the hosted [RivalSearchMCP](https://github.com/damionrashford/RivalSearchMCP) MCP server. All 10 tools work immediately — no setup, no API keys.
 
 ---
 
-## 🛠 10 Research Tools (via RivalSearchMCP)
+## MCP Research Tools
 
-All tools are powered by **[RivalSearchMCP](https://github.com/damionrashford/RivalSearchMCP)** — zero authentication required.
-
-### Search & Discovery
+All 10 MCP tools are provided by [RivalSearchMCP](https://github.com/damionrashford/RivalSearchMCP) — zero authentication required.
 
 | Tool | What It Does |
 |------|-------------|
@@ -77,187 +62,132 @@ All tools are powered by **[RivalSearchMCP](https://github.com/damionrashford/Ri
 | `news_aggregation` | Aggregate news from Google News, DuckDuckGo News, Yahoo News |
 | `github_search` | Search GitHub repositories with rate limiting |
 | `map_website` | Intelligent website exploration and mapping |
-
-### Content & Analysis
-
-| Tool | What It Does |
-|------|-------------|
 | `content_operations` | Retrieve, analyze, and extract content from any URL |
 | `document_analysis` | Extract text from PDFs, Word docs, and images with OCR |
 | `scientific_research` | Academic papers (arXiv, Semantic Scholar) and datasets (Kaggle, HuggingFace) |
-
-### AI Research
-
-| Tool | What It Does |
-|------|-------------|
 | `research_topic` | End-to-end research workflow for quick topic analysis |
 | `research_agent` | AI agent with autonomous multi-tool research |
 
 ---
 
-## ⚡ 5 Slash-Command Skills
+## Agent Skills
 
-Skills are guided, multi-step research workflows. Each one orchestrates multiple [RivalSearchMCP](https://github.com/damionrashford/RivalSearchMCP) tools and produces a structured report with citations.
+This Claude Code plugin includes 5 agent skills — slash commands that orchestrate MCP tools into multi-step research workflows with structured reports and citations.
 
-| Command | Description |
-|---------|-------------|
+| Agent Skill | Description |
+|-------------|-------------|
 | `/rival-search:research <topic>` | Comprehensive research with academic depth — papers, datasets, implementations |
 | `/rival-search:competitive-intel <company or market>` | Company, product, market, or website intelligence with SWOT analysis |
-| `/rival-search:due-diligence <company or person>` | Full due diligence with risk assessment — works for companies AND individuals |
+| `/rival-search:due-diligence <company or person>` | Full due diligence with risk assessment — works for companies and individuals |
 | `/rival-search:trend-intel <topic>` | News digest + trend trajectory with velocity indicators and maturity assessment |
 | `/rival-search:fact-check <claim>` | Cross-source claim verification with confidence scoring and evidence chains |
 
-### Examples
-
-```
-/rival-search:research retrieval augmented generation
-/rival-search:competitive-intel Vercel
-/rival-search:due-diligence Y Combinator
-/rival-search:due-diligence Jensen Huang
-/rival-search:trend-intel AI agents for software development
-/rival-search:fact-check "GPT-4 was trained on 1.8 trillion parameters"
-```
-
 ---
 
-## 🤖 6 Specialist Agents
+## AI Research Agents
 
-Agents are automatically invoked by Claude when your task matches their expertise. Each agent has a defined methodology, quality gates, and preloaded skills.
+This Claude Code plugin includes 6 AI research agents. Each agent has a defined methodology, quality gates, and preloaded agent skills.
 
 | Agent | Specialty |
 |-------|-----------|
-| **research-analyst** | Lead researcher — deep multi-source investigation with 5-phase methodology |
-| **competitive-intel** | Competitive intelligence — SWOT analysis, competitor profiling, market positioning |
-| **fact-checker** | Verification specialist — cross-source claim verification, confidence scoring |
-| **trend-analyst** | Trend spotter — trend identification, velocity tracking, trajectory projection |
-| **content-strategist** | Content researcher — gap analysis, audience research, content brief creation |
-| **due-diligence** | DD analyst — company/person investigation, risk assessment, red/green flags |
+| **research-analyst** | Lead researcher — deep multi-source investigation |
+| **competitive-intel** | SWOT analysis, competitor profiling, market positioning |
+| **fact-checker** | Cross-source claim verification, confidence scoring |
+| **trend-analyst** | Trend identification, velocity tracking, trajectory projection |
+| **content-strategist** | Content gap analysis, audience research, brief creation |
+| **due-diligence** | Company/person investigation, risk assessment, red/green flags |
 
 ---
 
-## 🔗 How It Works
+## How This Claude Code Plugin Works
 
-The plugin bundles four components that work together:
+1. **`.mcp.json`** — Connects to [RivalSearchMCP](https://github.com/damionrashford/RivalSearchMCP) via MCP at `https://RivalSearchMCP.fastmcp.app/mcp`. All 10 MCP tools available automatically.
 
-1. **`.mcp.json`** — Connects to the hosted [RivalSearchMCP](https://github.com/damionrashford/RivalSearchMCP) server at `https://RivalSearchMCP.fastmcp.app/mcp`. All 10 tools are available automatically.
+2. **`skills/`** — Five agent skill files with step-by-step research workflows, exact MCP tool parameters, and structured output formats.
 
-2. **`skills/`** — Five SKILL.md workflow files. Each defines step-by-step research instructions with exact tool parameters and output format.
+3. **`agents/`** — Six AI research agents with full Claude Code frontmatter (tools, agent skills, hooks, memory). Invoked automatically or manually.
 
-3. **`agents/`** — Six specialist agents with full Claude Code frontmatter (tools, skills, hooks, memory). Claude invokes them when your task matches their expertise.
-
-4. **`hooks/hooks.json`** — Portable event hooks for research audit logging and output quality validation.
+4. **`hooks/hooks.json`** — Portable event hooks for audit logging and output quality validation.
 
 ---
 
-## 📁 Plugin Structure
+## Structure
 
 ```
-rival-search/
+rival-search-plugin/
 ├── .claude-plugin/
-│   ├── plugin.json            # Plugin manifest
+│   ├── plugin.json            # Claude Code plugin manifest
 │   └── marketplace.json       # Marketplace config
 ├── .mcp.json                  # MCP server → RivalSearchMCP.fastmcp.app/mcp
 ├── agents/
-│   ├── research-analyst.md    # Lead researcher
-│   ├── competitive-intel.md   # CI specialist
-│   ├── fact-checker.md        # Verification specialist
-│   ├── trend-analyst.md       # Trend spotter
-│   ├── content-strategist.md  # Content researcher
-│   └── due-diligence.md       # DD analyst
+│   ├── research-analyst.md
+│   ├── competitive-intel.md
+│   ├── fact-checker.md
+│   ├── trend-analyst.md
+│   ├── content-strategist.md
+│   └── due-diligence.md
 ├── skills/
-│   ├── research/              # Multi-source + academic research
-│   ├── competitive-intel/     # Company, market & site intel
-│   ├── due-diligence/         # Company & person investigation
-│   ├── trend-intel/           # News + trend trajectory
-│   └── fact-check/            # Claim verification
+│   ├── research/
+│   ├── competitive-intel/
+│   ├── due-diligence/
+│   ├── trend-intel/
+│   └── fact-check/
 ├── hooks/
-│   └── hooks.json             # Audit & quality hooks
-├── CLAUDE.md                  # Project instructions (for Claude)
-├── LICENSE                    # MIT license
-└── README.md                  # This file (for humans)
+│   └── hooks.json
+├── CLAUDE.md
+├── LICENSE
+└── README.md
 ```
 
 ---
 
-## 💬 FAQ
+## FAQ
 
 <details>
-<summary><strong>Is rival-search really free?</strong></summary>
+<summary><strong>Does this Claude Code plugin require payment?</strong></summary>
 
-Yes! The plugin is MIT licensed and powered by [RivalSearchMCP](https://github.com/damionrashford/RivalSearchMCP), which is also 100% free. No API keys, no subscriptions, no hidden costs.
-
+No. MIT licensed, powered by [RivalSearchMCP](https://github.com/damionrashford/RivalSearchMCP). No API keys, no subscriptions, no hidden costs.
 </details>
 
 <details>
-<summary><strong>Do I need API keys or configuration?</strong></summary>
+<summary><strong>Do I need API keys?</strong></summary>
 
-No. Install the plugin and go. It auto-connects to the hosted RivalSearchMCP server. All 10 tools work immediately without any authentication.
-
+No. Install and go. This Claude Code plugin auto-connects to the hosted RivalSearchMCP MCP server.
 </details>
 
 <details>
-<summary><strong>What Claude Code version do I need?</strong></summary>
+<summary><strong>What's the difference between agent skills and agents?</strong></summary>
 
-Claude Code CLI v1.0.33 or later. The plugin uses standard Claude Code plugin features (agents, skills, hooks, MCP).
-
+**Agent skills** are slash commands you invoke explicitly (`/rival-search:research <topic>`). **Agents** are invoked automatically by Claude when your task matches their expertise.
 </details>
 
 <details>
-<summary><strong>Can I use individual tools without the skills?</strong></summary>
+<summary><strong>Can I use MCP tools directly without agent skills?</strong></summary>
 
-Absolutely. The skills are guided workflows, but you can ask Claude to use any RivalSearchMCP tool directly. For example: "Use web_search to find information about X" or "Search GitHub for Y."
-
-</details>
-
-<details>
-<summary><strong>What's the difference between skills and agents?</strong></summary>
-
-**Skills** are slash commands — you invoke them explicitly with `/rival-search:research <topic>`. They run a defined multi-step workflow.
-
-**Agents** are invoked automatically by Claude when your task matches their expertise. You can also invoke them manually via `/agents`.
-
+Yes. Agent skills are guided workflows, but you can ask Claude to use any RivalSearchMCP MCP tool directly.
 </details>
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
-Contributions are welcome! Whether it's adding new skills, improving agents, or fixing bugs.
+Contributions welcome — new agent skills, AI research agent improvements, or bug fixes.
 
-1. **Fork the Project**
-2. **Create your Feature Branch** (`git checkout -b feature/AmazingFeature`)
-3. **Commit your Changes** (`git commit -m 'Add AmazingFeature'`)
-4. **Push to the Branch** (`git push origin feature/AmazingFeature`)
-5. **Open a Pull Request**
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
----
+## Issues & Feedback
 
-## 💡 Issues, Feedback & Support
+**[Open an Issue](https://github.com/damionrashford/rival-search-plugin/issues)**
 
-Found a bug, have a feature request, or want to share how you're using rival-search?
+## Links
 
-- **Report a bug** — Help us improve
-- **Request a feature** — Suggest new skills or agents
-- **Share your use case** — Tell us what you're researching
-
-👉 **[Open an Issue](https://github.com/damionrashford/rival-search/issues)**
-
----
-
-## 🔗 Links
-
-- **[RivalSearchMCP](https://github.com/damionrashford/RivalSearchMCP)** — The MCP server powering this plugin (10 free research tools)
-- **[Plugin Repository](https://github.com/damionrashford/rival-search)** — This plugin's source code
+- **[RivalSearchMCP](https://github.com/damionrashford/RivalSearchMCP)** — The MCP server powering this Claude Code plugin
 - **[RivalSearchMCP Docs](https://damionrashford.github.io/RivalSearchMCP)** — Full documentation
 - **[Claude Code](https://claude.ai/code)** — The CLI this plugin extends
-
----
-
-## ⭐ Like this project? Give it a star!
-
-If you find rival-search useful, please consider giving it a star. It helps others discover the project and motivates continued development!
-
----
 
 ## License
 
